@@ -1,4 +1,4 @@
-	* {
+* {
   box-sizing: border-box;
   font-family: Arial, Tahoma, Helvetica, sans-serif;
  
@@ -87,6 +87,9 @@ p{
 	font-family: 'Varela Round', sans-serif;
 	font-size: 20px;
 	word-spacing: 6px;
+	letter-spacing:4px;
+	line-height: 150%;
+}
 	letter-spacing:4px;
 	line-height: 150%;
 }
