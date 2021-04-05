@@ -40,13 +40,14 @@ body {
   background-color: #155265;
   color: #f2f2f2;
   float: left;
+  text-decoration:none;
 }
 
 .content {
   background-image: linear-gradient(to bottom right, #afd1d8, #e7f4f7);
   color: #002129;
   padding: 10px;
-  height:auto; 
+  height:650px; 
   text-align: center;
 }
 
@@ -60,6 +61,14 @@ body {
   height: 20%;
 }
 
+img{
+	height:26%;
+	width: 26%;
+	margin-left: 12%;
+	border-radius: 30%;
+	float: left;
+	border: 7px solid #155265;
+}
 
 hr{
 	width: 20%;
@@ -69,15 +78,9 @@ hr{
 
 h2{
 	font-family: 'Pacifico', cursive;
-	font-size: 26px;
+	font-size: 35px;
 	word-spacing: 12px;
 	letter-spacing:16px;
-	width: 500px;
-	margin: auto;
-	background-color: black;
-	color: #e7f4f7;
-	text-shadow: 6px 5px 3px #0099bb;
-
 }
 
 p{
@@ -85,4 +88,5 @@ p{
 	font-size: 20px;
 	word-spacing: 6px;
 	letter-spacing:4px;
+	line-height: 150%;
 }
