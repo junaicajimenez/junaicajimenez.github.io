@@ -19,44 +19,85 @@ body {
 }
 
 .topnav {
-  overflow: hidden;
-  background-color: #9fffcb;
-  height: 55px;
+	overflow: hidden;
+	background-color: #9fffcb;
+	height: 60px;
   
 }
-
-
-.topnav {
-  overflow: hidden;
-  background-color: #9fffcb;
-  height: 60px;
-  
-}
-
 .topnav a {
-
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  float:right;
-  font-size: 22px;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	float:left;
+	font-size: 22px;
+	font-family: 'Raleway', sans-serif;
 }
-
-
 .topnav a:hover {
-  background-color: #4ac2dd;
-  color: black;
-  height: 60px;
+	background-color: #57cc99;
+	color: white;
+	height: 60px;
+}
+.topnav a.active {
+	background-color: #9fffcb;
+	color: black;
+	float: left;
+	margin-right: 40%;
+	text-decoration:none;
+	padding-right: 30px;
 }
 
 
-.topnav a.active {
-  background-color: #9fffcb;
-  color: black;
+.dropdown {
   float: left;
-  text-decoration:none;
+  overflow: hidden;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+.dropdown .dropbtn {
+  font-size: 22px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #57cc99;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 20px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #57cc99;
+  color: white;
+  height: 80px ;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .footer{
@@ -168,18 +209,122 @@ ul.a {
 		margin-right: 10%;
 }
 
+button {
+  border-radius: 20px;
+  padding: 4px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 14px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 120px;
+  text-align: center;
+  float: right;
+  
+}
 
+.button1 {
+	color: black; 
+  background-color: white; 
+  border: 2px solid black;
+  
+}
+
+.button1:hover {
+  background-color: #b4dbbb;
+  color: white;
+}
+
+.button1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button1:hover span {
+   
+  color: white;
+  padding-right: 25px;
+}
+
+.button1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+.button2 {
+	color: black; 
+  background-color: white; 
+  border: 2px solid black;
+}
+
+.button2:hover {
+  background-color: #b4dbbb;
+  color: white;
+}
+
+
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 span:after {
+  content: '\00ab';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+	color: white;
+  padding-left: 25px;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  left: 0;
+}
 </style>
 </head>
 <body>
     <div class="topnav">
-	<a href="#Home" class="active">Healthy Alley</a>
-	<a href="JIMENEZ_Places_ITAD.html#Travel">Travel</a>
-	<a href="JIMENEZ_PhotoGallery_ITAD.html#Resume">Gallery</a>
-	<a href="JIMENEZ_Resume_ITAD.html#Resume">Resume</a>
-	<a href="JIMENEZ_Film_ITAD.html#Film">My Kind of Films</a>
-	<a href="JIMENEZ_MyBeat_ITAD.html#Music">My Beat</a>
-	<a href="JIMENEZ_Bio_ITAD.html#">Story of My Life</a>
+  <a href="#Home" class="active">Healthy Alley</a>
+		<a href="../../home.html">Home</a>
+		<a href="../../home.html#about">Page Infomation</a>
+		<a href="">Gallery</a>
+		<a href="../../Junaica/HTML/mapping.html">Imagemap</a>
+		<a href="../../home.html#us">Author</a>
+		
+        <div class="dropdown">
+    <button class="dropbtn">Blogs
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+		<a href="../../Junaica/index.html">Mental Health</a>
+		<a href="../../Jaime/index.html">Chronic Disease</a>
+		<a href="../MARINAS.html">Importance of healthy lifestyle during pandemic</a>
+		<a href="../">Training of the Fitness</a>
+    </div>
+  </div> 
 </div>
 	<div id = "rightbox">
 	<br><br>
@@ -259,6 +404,9 @@ ul.a {
 <br><br><br>
 <br><br><br>
 <br><br><br>
+<button class="button  button1" style="vertical-align:right-side"><a href="Page3.html"><span>Next</span></a></button>
+<button class="button  button2" style="vertical-align:right-side"><a href="Page1.html"><span>Previous</span></a></button>
+<br><br><br><br><br>
 <br><br><br>
 	<div class="footer">
 		<br>

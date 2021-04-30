@@ -12,38 +12,86 @@
 		}
 		
 		.topnav {
-		  overflow: hidden;
-		  background-color: #9fffcb;
-		  height: 60px;
-		  
-		}
+	overflow: hidden;
+	background-color: #9fffcb;
+	height: 60px;
+  
+}
+.topnav a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	float:left;
+	font-size: 22px;
+	font-family: 'Raleway', sans-serif;
+}
+.topnav a:hover {
+	background-color: #57cc99;
+	color: white;
+	height: 60px;
+}
+.topnav a.active {
+	background-color: #9fffcb;
+	color: black;
+	float: left;
+	margin-right: 40%;
+	text-decoration:none;
+	padding-right: 30px;
+}
 
-		.topnav a {
 
-		  display: block;
-		  color: black;
-		  text-align: center;
-		  padding: 14px 16px;
-		  text-decoration: none;
-		  float:right;
-		  font-size: 22px;
-		}
+.dropdown {
+  float: left;
+  overflow: hidden;
+  font-family: 'Raleway', sans-serif;
 
+}
 
-		.topnav a:hover {
-		  background-color: #4ac2dd;
-		  color: black;
-		  height: 60px;
-		}
+.dropdown .dropbtn {
+  font-size: 22px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
 
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #57cc99;
+}
 
-		.topnav a.active {
-		  background-color: #9fffcb;
-		  color: black;
-		  float: left;
-		  text-decoration:none;
-		}
-		
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 20px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #57cc99;
+  color: white;
+  height: 80px ;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 		body{
 			background: #9fffcb;
 		}
@@ -313,14 +361,25 @@
     <!--MARINAS,ZAIRYL -->
     <!--3/23/21-->
 	<div class="topnav">
-		<a href="#Home" class="active">Healthy Alley</a>
-		<a href="JIMENEZ_Places_ITAD.html#Travel">Travel</a>
-		<a href="JIMENEZ_PhotoGallery_ITAD.html#Resume">Gallery</a>
-		<a href="JIMENEZ_Resume_ITAD.html#Resume">Resume</a>
-		<a href="JIMENEZ_Film_ITAD.html#Film">My Kind of Films</a>
-		<a href="JIMENEZ_MyBeat_ITAD.html#Music">My Beat</a>
-		<a href="JIMENEZ_Bio_ITAD.html#">Story of My Life</a>
-	</div>
+  <a href="#Home" class="active">Healthy Alley</a>
+		<a href="../../home.html">Home</a>
+		<a href="../../home.html#about">Page Infomation</a>
+		<a href="">Gallery</a>
+		<a href="../Junaica/HTML/mapping.html">Imagemap</a>
+		<a href="../../home.html#us">Author</a>
+		
+        <div class="dropdown">
+    <button class="dropbtn">Blogs
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+		<a href="../Junaica/index.html">Mental Health</a>
+		<a href="../Jaime/index.html">Chronic Disease</a>
+		<a href="MARINAS.html">Importance of healthy lifestyle during pandemic</a>
+		<a href="../">Training of the Fitness</a>
+    </div>
+  </div> 
+</div>
 	<image src="IMAGES/banner.png" alt="" width="1349" height="400">
 	<div class="top">
 		<div class="overlay">
