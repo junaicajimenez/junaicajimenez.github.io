@@ -4,6 +4,11 @@
 <title>Physical Activity to Prevent Chronic Disease</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 * {
   box-sizing: border-box;
@@ -18,179 +23,7 @@ body {
 		   
 }
 
-.topnav {
-	overflow: hidden;
-	background-color: #9fffcb;
-	height: 60px;
-  
-}
-.topnav a {
-	display: block;
-	color: black;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	float:left;
-	font-size: 22px;
-}
-.topnav a:hover {
-	background-color: #57cc99;
-	color: white;
-	height: 60px;
-}
-.topnav a.active {
-	background-color: #9fffcb;
-	color: black;
-	float: left;
-	margin-right: 50%;
-	text-decoration:none;
-	padding-left: 60px;
-}
 
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-
-}
-
-.dropdown .dropbtn {
-  font-size: 22px;  
-  border: none;
-  outline: none;
-  color: black;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: 'Raleway', sans-serif;
-  margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #57cc99;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: white;
-  min-width: 180px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 20px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #57cc99;
-  color: white;
-  height: 130px ;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.button {
-  border-radius: 20px;
-  padding: 4px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 2px 14px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  width: 120px;
-  text-align: center;
-  float: right;
-  
-}
-
-.button1 {
-	color: black; 
-  background-color: white; 
-  border: 2px solid black;
-  
-}
-
-.button1:hover {
-  background-color: #b4dbbb;
-  color: white;
-}
-
-.button1 span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button1 span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button1:hover span {
-   
-  color: white;
-  padding-right: 25px;
-}
-
-.button1:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-
-
-.button2 {
-	color: black; 
-  background-color: white; 
-  border: 2px solid black;
-}
-
-.button2:hover {
-  background-color: #b4dbbb;
-  color: white;
-}
-
-
-.button2 span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button2 span:after {
-  content: '\00ab';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  left: -20px;
-  transition: 0.5s;
-}
-
-.button2:hover span {
-	color: white;
-  padding-left: 25px;
-}
-
-.button2:hover span:after {
-  opacity: 1;
-  left: 0;
-}
 
 
 .content {
@@ -280,118 +113,28 @@ div.footer2{
 			border-style: double;
 		}
 		
-		.button {
-  background-color: #4CAF50; /* Green */
-  color: white;
-  border-radius: 20px;
-  padding: 4px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 2px 14px;
-  transition-duration: 0.25s;
-  cursor: pointer;
-  width: 120px;
-  text-align: center;
-  float: right;
-}
-
-.button1 {
-  background-color: white; 
-  color: black; 
-  border: 2px solid black;
-}
-
-.button1:hover {
-  background-color: #b4dbbb;
-  color: white;
-}
-
-.button1 span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.25s;
-}
-
-.button1 span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.25s;
-}
-
-.button1:hover span {
-  padding-right: 25px;
-}
-
-.button1:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-
-
-.button2 {
-  background-color: white; 
-  color: black; 
-  border: 2px solid black;
-}
-
-.button2:hover {
-  background-color: #b4dbbb;
-  color: white;
-}
-
-
-.button2 span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.25s;
-}
-
-.button2 span:after {
-  content: '\00ab';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  left: -20px;
-  transition: 0.25s;
-}
-
-.button2:hover span {
-  padding-left: 25px;
-}
-
-.button2:hover span:after {
-  opacity: 1;
-  left: 0;
-}
 
 </style>
 </head>
 <body>
-    <div class="topnav">
+<link rel="stylesheet" type="text/css" href="design.css">
+<div class="topnav">
   <a href="#Home" class="active">Healthy Alley</a>
-		<a href="../../home.html">Home</a>
-		<a href="../../home.html#about">Page Infomation</a>
+		<a href="../home.html">Home</a>
+		<a href="../home.html#about">Page Infomation</a>
 		<a href="">Gallery</a>
 		<a href="Junaica/HTML/mapping.html">Imagemap</a>
-		<a href="../../home.html#us">Author</a>
+		<a href="../home.html#us">Author</a>
 		
         <div class="dropdown">
     <button class="dropbtn">Blogs
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-		<a href="#">Mental Health</a>
-		<a href="#">Chronic Disease</a>
-		<a href="#">Importance of healthy lifestyle during pandemic</a>
-		<a href="#">Training of the Fitness</a>
+		<a href="../Junaica/index.html">Mental Health</a>
+		<a href="index.html">Chronic Disease</a>
+		<a href="../Zairyl/MARINAS.html">Importance of healthy lifestyle during pandemic</a>
+		<a href="../Daria/FITNESS/index.html">Training of the Fitness</a>
     </div>
   </div> 
 </div>
