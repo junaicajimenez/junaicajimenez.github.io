@@ -12,6 +12,7 @@
 	text-decoration: none;
 	float:left;
 	font-size: 22px;
+	font-family: 'Raleway', sans-serif;
 }
 .topnav a:hover {
 	background-color: #57cc99;
@@ -19,18 +20,19 @@
 	height: 60px;
 }
 .topnav a.active {
-			background-color: #9fffcb;
-			color: black;
-			float: left;
-			margin-right: 40%;
-			text-decoration:none;
-			padding-right: 30px;
-		}
+	background-color: #9fffcb;
+	color: black;
+	float: left;
+	margin-right: 40%;
+	text-decoration:none;
+	padding-right: 30px;
+}
 
 
 .dropdown {
   float: left;
   overflow: hidden;
+  font-family: 'Raleway', sans-serif;
 
 }
 
@@ -41,8 +43,8 @@
   color: black;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit;
   margin: 0;
+  font-family: 'Raleway', sans-serif;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
@@ -70,13 +72,12 @@
 .dropdown-content a:hover {
   background-color: #57cc99;
   color: white;
-  height: 60px ;
+  height: 80px ;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
 .button {
   border-radius: 20px;
   padding: 4px 10px;
