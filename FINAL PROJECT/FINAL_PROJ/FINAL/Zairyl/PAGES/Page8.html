@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title></title>
     <style type="text/css">
 * {
@@ -18,88 +19,11 @@ body {
    
 }
 
-.topnav {
-	overflow: hidden;
-	background-color: #9fffcb;
-	height: 60px;
-  
-}
-.topnav a {
-	display: block;
-	color: black;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	float:left;
-	font-size: 22px;
-	font-family: 'Raleway', sans-serif;
-}
-.topnav a:hover {
-	background-color: #57cc99;
-	color: white;
-	height: 60px;
-}
-.topnav a.active {
-	background-color: #9fffcb;
-	color: black;
-	float: left;
-	margin-right: 40%;
-	text-decoration:none;
-	padding-right: 30px;
-}
-
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-  font-family: 'Raleway', sans-serif;
-
-}
-
-.dropdown .dropbtn {
-  font-size: 22px;  
-  border: none;
-  outline: none;
-  color: black;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-  font-family: 'Raleway', sans-serif;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #57cc99;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: white;
-  min-width: 180px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 20px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #57cc99;
-  color: white;
-  height: 80px ;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
+.headpic{
+			width: 99vw;
+			background-size: cover;
+			height: 50vh;
+		}
 .footer{
 			font-family: 'Raleway', sans-serif;
 			color: #f9ffed;
@@ -108,62 +32,11 @@ body {
 			font-size: 20px;
 			background-color: black;
 			
-		}
-
-.imgLeft{
-	float: left;
-	margin-right: 25px;
-	border: 4px solid #001e2d;
-	
 }
-.imgL{
-	height: 18%;
-	width: 23%;
-	border-radius: 10%;
-	float: left;
-	border: 4px solid #001e2d;
-	margin-right: 25px;
-	
-}
-.imgL1{
-	height: 40%;
-	width: 45%;
-	border-radius: 10%;
-	float: left;
-	border: 4px solid #001e2d;
-	margin-right: 45px;	
-}
-.imgl2{
-	
-	float: left;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-.imgR{
-	border-radius: 3%;
-	float: right;
-	margin-left: 25px;
-	
-}
-
-.center {
-		 display: block;
-		 margin-left: auto;
-		 margin-right: auto;
-	}
-
 hr{
-	width: 20%;
-	border: 5px solid #25a18e;
+	width: 70%;
+	border: 3px solid #25a18e;
 	border-radius: 5px;
-}
-
-h2{
-	font-family: 'Pacifico', cursive;
-	font-size: 35px;
-	word-spacing: 6px;
-	letter-spacing:6x;
 }
 h1{
 	font-family: 'Pacifico', cursive;
@@ -173,238 +46,124 @@ h1{
 	text-align: center;
 	background-color: black;
 	color: white;
+	margin-left:16%;
+	margin-right:16%;
 	
+	}
+h2{
+	font-family: Proxima Nova,Helvetica,Arial,sans-serif;
+	font-size: 30px;
+	word-spacing: 6px;
+	letter-spacing:6x;	
+	text-align: center;
 }
 
 p{
-	font-family: 'Varela Round', sans-serif;
-	font-size: 20px;
+	font-family: Proxima Nova,Helvetica,Arial,sans-serif;
+	font-size: 17px;
 	word-spacing: 6px;
-	letter-spacing:4px;
+	letter-spacing:3px;
 	line-height: 150%;
 	text-align: justify;
-	padding: 30px;
-
+	padding-left: 30px;
+	padding-right: 30px;
 }
+#ol{
 
-ul.a {
-  list-style-type: disc;
-  font-size: 22px;
-  text-align: left;
+  line-height: 1.5em;
+  font-family:  Proxima Nova,Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  text-align: justify;
   list-style-position: inside;
   display: inline-block; 
-  padding-left:7%;
+  margin-right: 5%;
 }
 
 .myDiv {
-		position: relative;
+		margin: auto;
+		width: 70%;
 		background-color: #f1f8e9;
-		margin: 2% 0% 0% 10%;
-		width: 50%
+		padding: 10px;
 	}
-
-#rightbox{
-		float:right;
-		margin-left: 10%;
-		margin-right: 10%;
-}
-
-.button {
-  border-radius: 20px;
-  padding: 4px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 2px 14px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  width: 120px;
-  text-align: center;
-  float: right;
-  
-}
-
-.button1 {
-	color: black; 
-  background-color: white; 
-  border: 2px solid black;
-  
-}
-
-.button1:hover {
-  background-color: #b4dbbb;
-  color: white;
-}
-
-.button1 span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button1 span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button1:hover span {
-   
-  color: white;
-  padding-right: 25px;
-}
-
-.button1:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-
-
-.button2 {
-	color: black; 
-  background-color: white; 
-  border: 2px solid black;
-}
-
-.button2:hover {
-  background-color: #b4dbbb;
-  color: white;
-}
-
-
-.button2 span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button2 span:after {
-  content: '\00ab';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  left: -20px;
-  transition: 0.5s;
-}
-
-.button2:hover span {
-	color: white;
-  padding-left: 25px;
-}
-
-.button2:hover span:after {
-  opacity: 1;
-  left: 0;
-}
+.myDiv2 {
+		margin: auto;
+		width: 70%;
+		border-style: dotted;
+		border-color: black;
+		padding: 10px;
+	}
 </style>
 </head>
+	<link rel="stylesheet" type="text/css" href="../design.css">
+	<!--MARIÑAS, ZAIRYL-->
 <body>
-    <div class="topnav">
+<div class="topnav">
   <a href="#Home" class="active">Healthy Alley</a>
-		<a href="../../home.html">Home</a>
-		<a href="../../home.html#about">Page Infomation</a>
+		<a href="../home.html">Home</a>
+		<a href="../home.html#about">Page Infomation</a>
 		<a href="">Gallery</a>
-		<a href="../../Junaica/HTML/mapping.html">Imagemap</a>
-		<a href="../../home.html#us">Author</a>
+		<a href="../Junaica/HTML/mapping.html">Imagemap</a>
+		<a href="../home.html#us">Author</a>
 		
         <div class="dropdown">
     <button class="dropbtn">Blogs
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-		<a href="../../Junaica/index.html">Mental Health</a>
-		<a href="../../Jaime/index.html">Chronic Disease</a>
-		<a href="../MARINAS.html">Importance of healthy lifestyle during pandemic</a>
-		<a href="../">Training of the Fitness</a>
+		<a href="../Junaica/index.html">Mental Health</a>
+		<a href="../Jaime/index.html">Chronic Disease</a>
+		<a href="MARINAS.html">Importance of healthy lifestyle during pandemic</a>
+		<a href="../DARIA/FITNESS/index.html">Training of the Fitness</a>
+
     </div>
   </div> 
 </div>
-	<div id = "rightbox">
-	<br><br>
-			<img src="../IMAGES/16.jfif" width="320" height="220"></img><br><br>
-			<img src="../IMAGES/17.png"></img><br><br>
-			<img src="../IMAGES/18.png"></img><br><br>
-			<img src="../IMAGES/19.png"></img><br><br>
-			<img src="../IMAGES/20.png"></img><br><br>
-			<img src="../IMAGES/21.png"></img><br><br>
-			<img src="../IMAGES/22.jfif" width="320" height="220"><br><br>
-			<img src="../IMAGES/23.jfif" width="320" height="220"><br><br>
-			<img src="../IMAGES/24.jfif" width="320" height="220"><br><br>
-			<br>
-		</div>
-		
+	<image class="headpic" src="../IMAGES/banner.png">
+	<br>
+	<br>
+	<h1>Water Fasting 101: What You Need to Know</h1>
+	<br>
+	
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<img src="../IMAGES/50.jpg" width="300" height="220" ></img>
+	<img src="../IMAGES/49.jpg" width="310" height="220" ></img>
+	<img src="../IMAGES/51.jpg" width="300" height="220" ></img>
+	<br>
+	<br>
+	<hr>
+	<br>
 		<div class="myDiv">
 		<br>
-		<img src="../IMAGES/15.png" class="center"></img>
-		<h1>Why Water is Important in Our Body</h1>
-		
-			<p>You know you need water to live, and drinking it on a daily basis makes you feel better. So what happens in the body when you drink water?<br><br>
-			Water is used by the body to help control temperature and sustain other bodily functions in all of its cells, muscles, and tissues. Since 
-			the body loses water by breathing, sweating, and digestion, it's important to rehydrate through consuming water and consuming water-rich foods.
-		
-			<ol>
-				<b><li>Water Protects Your Tissues, Spinal Cord, and Joints</li></b><br>
-					<ul type="square">
-						<li>Keeping your body hydrated helps it retain optimum levels of moisture in these sensitive areas, as well as in the blood, bones, and brain. In addition, water helps protect the spinal cord, and it acts as a lubricant and cushion for your joints.</li>
-					</ul>
-				<br>	
-				<b><li>Water Helps Your Body Remove Waste</li></b><br>
-					<ul type="square">
-						<li>Adequate water intake enables your body to excrete waste through perspiration, urination, and defecation. Water helps your kidneys remove waste from your blood and keep the blood vessels that run to your kidneys open and filter them out.</li>
-					<br>
-					<b>RELATED: <a href="enough_water.html">Are You Drinking Enough Water? These Are the Health Risks of Dehydration</a></b>
-					</ul>
-				<br>	
-				<b><li>Water Aids in Digestion</li></b><br>
-					<ul type="square">
-						<li>Water is important for healthy digestion. Water helps break down the food you eat, allowing its nutrients to be absorbed by your body. After you drink, both your small and 
-						large intestines absorb water, which moves into your bloodstream and is also used to break down nutrients. As your large intestine absorbs water, stool changes from liquid to solid.
-						Water is also necessary to help you digest soluble fiber, per MedlinePlus. With the help of water, this fiber turns to gel and slows digestion.</li>
-					</ul>
-				<br>	
-				<b><li>Water Prevents You From Becoming Dehydrated</li></b><br>
-					<ul type="square">
-						<li>Your body loses fluids when you engage in vigorous exercise, sweat in high heat, or come down with a fever or contract an illness that causes vomiting or diarrhea. If you're losing fluids for any of these reasons, it's important 
-						to increase your fluid intake so that you can restore your body's natural hydration level. Your doctor may also recommend that you drink more fluids to help treat other health conditions, like bladder infections and urinary tract stones</li>
-					<br>
-					<b>RELATED: <a href="fasting101.html">Water Fasting 101: What You Need to Know</a></b>
-					</ul>
-				<br>	
-				<b><li>Water Helps Your Brain Function Optimally</li></b><br>
-					<ul type="square">
-						<li>Ever feel foggy headed? Take a sip of water. Research shows that dehydration is a drag to memory, attention, and energy, per a small study on adult men from China published in June 2019 in the International Journal of Environmental Research and Public Health. 
-						It’s no wonder, considering H2O makes up 75 percent of the brain, the authors point out. One reason for that foggy-headed feeling? “Adequate electrolyte balance is vital to keeping your body functioning optimally. Low electrolytes can cause issues including muscle weakness, 
-						fatigue, and confusion,” says Gabrielle Lyon, DO, a functional medicine physician in New York City.</li>
-					</ul>
-				<br>	
-				<b><li>Water Keeps Your Cardiovascular System Healthy</li></b><br>
-					<ul type="square">
-						<li>Water is a huge part of your blood. If you become dehydrated, your blood becomes more concentrated, which can lead to an imbalance of the electrolyte minerals it contains sodium and potassium, for example. These electrolytes are necessary for proper muscle and heart function.</li>
-					<br>
-					<b>RELATED: <a href="symptomSign.html">Is Your Symptom a Sign of Dehydration or Something Else?</a></b>
-					</ul>
-				<br>	
-				<b><li>Water Can Help You Eat Healthier</li></b><br>
-					<ul type="square">
-						<li>It may be plain, but it’s powerful.People who drank just 1 percent more water a day ate fewer calories and less saturated fat, sugar, sodium, and cholesterol.Water may help fill you up, especially if you drink it before eating a meal.</li>
-					</ul>
-					<br>
-			</ol>
-			</div>
-			</p>
+		<h2>What is Water Fasting Exactly?</h2>
+			<p>There may be no easier diet to define than water fasting, for this approach involves exactly what it says. “Water fasting is complete absence of all substances, except pure water, in an environment of complete rest,” says Alan Goldhamer, doctor of chiropractic and founder of the TrueNorth Health Center in Santa Rosa, California, who runs medically supervised water fasts that last anywhere from 5 to 40 days (the latter of which is a length of time most healthcare professionals do not endorse). The idea behind being at complete rest (aka not exercising), Dr. Goldhamer says, is that your body won’t need as many calories. </p>
+		<br>
+		<h2>Health Benefits of Water Fasting</h2>
+		<p>Some people can do so in the hopes of addressing health problems like high blood pressure, type 2 diabetes, and heart disease, both of which may be caused by over weight, according to Smith. Others, of course, can fast for religious purposes or to prepare for a medical procedure such as a colonoscopy.
+		<br><br>
+		In the holistic wellness community, water fasts are a hot subject, but let's get one thing straight: despite what you might have seen elsewhere, there isn't enough rigorous clinical research to justify using this method for weight loss, diabetes control, and the like. In reality, for certain people, water fasts can be dangerous to their health.
+		<br><br>
+		Taking a rest from food, on the other hand, may help to reduce blood pressure. In a previous study, 174 people with elevated blood pressure fasted for 10 to 11 days on average, and by the end of the time, almost 90% of the participants' blood pressure had dropped to normal levels.</p>
+		<br>
+		<h2>Who Should Avoid Doing a Water Fast and Why?</h2>
+		<p>They can be avoided by some people because they can cause severe health problems. Many with renal failure, those taking various prescriptions, and women who are pregnant or breastfeeding are among those who are at risk, according to Taz. She also advises against doing this on your own whether you have diabetes, heart disease, or liver disease. Anyone with a history of eating disorders should avoid this method.</p>
+		<br>
+		<h2>Why You Should Avoid Doing a <br>Water Fast for Longer Than 2 Days</h2>
+		<p>What's the issue with fasting, whether it's a water fast or another kind? Many people believe that if they don't eat one or two days a week, they will eat whatever they want the rest of the week, which is just not true.
+		<br><br>
+		Make sure you're drinking enough water during these 24 to 48 hours. “You get a lot more water from food on an average day of eating,” Smith explains, “so you'll have to drink more water during a water fast than you usually will in a day.”Drink 9 to 13 cups of water a day, spread out during the day, and set alerts to remind you to drink, according to Smith. Set a phone alarm or use a water bottle that lights up at predetermined times to prompt you to drink.
+		<br><br>
+		Also, take a break from physical activity, and because of the fatigue you may feel, you may want to curtail driving or operating heavy machinery during these times</p>
+		<br>
+		</div>
+		<br>
+		<div class="myDiv2">
+		<p>If you don't have any contraindications and plan to use water fasting as a weight losing strategy at home. Only make sure to consult with the doctor first, and don't do so for more than 48 hours.To avoid unintended effects, anything done during that period should be done under constant medical observation. If you feel any side effects, such as dizziness, light-headedness, or fainting, you should stop fasting right away.</p>
+		</div>
+		<br>
+			<button class="button  button1" style="vertical-align:right-side"><a href="../PAGES/Page9.html"><span>Next</span></a></button>
+			<button class="button  button2" style="vertical-align:right-side"><a href="../PAGES/Page7.html"><span>Previous</span></a></button>
+			<br><br><br><br><br>
 
-</div>
-<br><br><br>
-<br><br><br>
-<br><br><br>
-<br><br><br>
 	<div class="footer">
 		<br>
 		<h6>Healthy Alley &#169; 2021</h6>

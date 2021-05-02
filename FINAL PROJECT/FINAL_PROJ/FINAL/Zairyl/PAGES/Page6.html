@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title></title>
     <style type="text/css">
 * {
@@ -18,88 +19,11 @@ body {
    
 }
 
-.topnav {
-	overflow: hidden;
-	background-color: #9fffcb;
-	height: 60px;
-  
-}
-.topnav a {
-	display: block;
-	color: black;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	float:left;
-	font-size: 22px;
-	font-family: 'Raleway', sans-serif;
-}
-.topnav a:hover {
-	background-color: #57cc99;
-	color: white;
-	height: 60px;
-}
-.topnav a.active {
-	background-color: #9fffcb;
-	color: black;
-	float: left;
-	margin-right: 40%;
-	text-decoration:none;
-	padding-right: 30px;
-}
-
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-  font-family: 'Raleway', sans-serif;
-
-}
-
-.dropdown .dropbtn {
-  font-size: 22px;  
-  border: none;
-  outline: none;
-  color: black;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-  font-family: 'Raleway', sans-serif;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #57cc99;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: white;
-  min-width: 180px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 20px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #57cc99;
-  color: white;
-  height: 80px ;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
+.headpic{
+			width: 99vw;
+			background-size: cover;
+			height: 50vh;
+		}
 .footer{
 			font-family: 'Raleway', sans-serif;
 			color: #f9ffed;
@@ -108,45 +32,7 @@ body {
 			font-size: 20px;
 			background-color: black;
 			
-		}
-
-.imgLeft{
-	float: left;
-	margin-right: 25px;
-	border: 4px solid #001e2d;
-	
-}
-.imgL{
-	height: 18%;
-	width: 23%;
-	border-radius: 10%;
-	float: left;
-	border: 4px solid #001e2d;
-	margin-right: 25px;
-	
-}
-.imgL1{
-	height: 40%;
-	width: 45%;
-	border-radius: 10%;
-	float: left;
-	border: 4px solid #001e2d;
-	margin-right: 45px;	
-}
-.imgl2{
-	
-	float: left;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-.imgR{
-	border-radius: 3%;
-	float: right;
-	margin-left: 25px;
-	
-}
-
+	}
 .center {
 		 display: block;
 		 margin-left: auto;
@@ -154,8 +40,8 @@ body {
 	}
 
 hr{
-	width: 20%;
-	border: 5px solid #25a18e;
+	width: 95%;
+	border: 3px solid #25a18e;
 	border-radius: 5px;
 }
 
@@ -178,7 +64,7 @@ h1{
 
 p{
 	font-family: 'Varela Round', sans-serif;
-	font-size: 20px;
+	font-size: 18px;
 	word-spacing: 6px;
 	letter-spacing:4px;
 	line-height: 150%;
@@ -186,21 +72,23 @@ p{
 	padding: 30px;
 
 }
+#ol{
 
-ul.a {
-  list-style-type: disc;
-  font-size: 22px;
-  text-align: left;
+  line-height: 1.5em;
+  font-family:  Proxima Nova,Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  text-align: justify;
   list-style-position: inside;
   display: inline-block; 
-  padding-left:7%;
+  margin-right: 5%;
 }
 
 .myDiv {
 		position: relative;
 		background-color: #f1f8e9;
 		margin: 2% 0% 0% 10%;
-		width: 50%
+		width: 45%
+		
 	}
 
 #rightbox{
@@ -208,148 +96,59 @@ ul.a {
 		margin-left: 10%;
 		margin-right: 10%;
 }
-
-.button {
-  border-radius: 20px;
-  padding: 4px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 2px 14px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  width: 120px;
-  text-align: center;
-  float: right;
-  
-}
-
-.button1 {
-	color: black; 
-  background-color: white; 
-  border: 2px solid black;
-  
-}
-
-.button1:hover {
-  background-color: #b4dbbb;
-  color: white;
-}
-
-.button1 span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button1 span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button1:hover span {
-   
-  color: white;
-  padding-right: 25px;
-}
-
-.button1:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-
-
-.button2 {
-	color: black; 
-  background-color: white; 
-  border: 2px solid black;
-}
-
-.button2:hover {
-  background-color: #b4dbbb;
-  color: white;
-}
-
-
-.button2 span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button2 span:after {
-  content: '\00ab';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  left: -20px;
-  transition: 0.5s;
-}
-
-.button2:hover span {
-	color: white;
-  padding-left: 25px;
-}
-
-.button2:hover span:after {
-  opacity: 1;
-  left: 0;
-}
 </style>
 </head>
+	<link rel="stylesheet" type="text/css" href="../design.css">
+	<!--MARIÑAS, ZAIRYL-->
 <body>
-    <div class="topnav">
+<div class="topnav">
   <a href="#Home" class="active">Healthy Alley</a>
-		<a href="../../home.html">Home</a>
-		<a href="../../home.html#about">Page Infomation</a>
+		<a href="../home.html">Home</a>
+		<a href="../home.html#about">Page Infomation</a>
 		<a href="">Gallery</a>
-		<a href="../../Junaica/HTML/mapping.html">Imagemap</a>
-		<a href="../../home.html#us">Author</a>
+		<a href="../Junaica/HTML/mapping.html">Imagemap</a>
+		<a href="../home.html#us">Author</a>
 		
         <div class="dropdown">
     <button class="dropbtn">Blogs
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-		<a href="../../Junaica/index.html">Mental Health</a>
-		<a href="../../Jaime/index.html">Chronic Disease</a>
-		<a href="../MARINAS.html">Importance of healthy lifestyle during pandemic</a>
-		<a href="../">Training of the Fitness</a>
+		<a href="../Junaica/index.html">Mental Health</a>
+		<a href="../Jaime/index.html">Chronic Disease</a>
+		<a href="MARINAS.html">Importance of healthy lifestyle during pandemic</a>
+		<a href="../DARIA/FITNESS/index.html">Training of the Fitness</a>
+
     </div>
   </div> 
 </div>
+	<image class="headpic" src="../IMAGES/banner.png">
+
 	<div id = "rightbox">
 	<br><br>
-			<img src="../IMAGES/16.jfif" width="320" height="220"></img><br><br>
-			<img src="../IMAGES/17.png"></img><br><br>
-			<img src="../IMAGES/18.png"></img><br><br>
-			<img src="../IMAGES/19.png"></img><br><br>
-			<img src="../IMAGES/20.png"></img><br><br>
-			<img src="../IMAGES/21.png"></img><br><br>
-			<img src="../IMAGES/22.jfif" width="320" height="220"><br><br>
-			<img src="../IMAGES/23.jfif" width="320" height="220"><br><br>
-			<img src="../IMAGES/24.jfif" width="320" height="220"><br><br>
-			<br>
+			<img src="../IMAGES/3.png" width="320" height="220"></img><br><br>
+			<img src="../IMAGES/4.png"></img><br><br>
+			<img src="../IMAGES/5.png"></img><br><br>
+			<img src="../IMAGES/6.png"></img><br><br>
+			<img src="../IMAGES/8.jfif" width="320" height="200"></img><br><br>
+			<img src="../IMAGES/9.jfif" width="320" height="220"><br><br>
+			<img src="../IMAGES/7.png"></img><br><br>
+			<img src="../IMAGES/11.png" width="320" height="320"><br><br>
+			<img src="../IMAGES/13.jpg" width="320" height="250">
 		</div>
 		
 		<div class="myDiv">
 		<br>
-		<img src="../IMAGES/15.png" class="center"></img>
-		<h1>Why Water is Important in Our Body</h1>
+		<h1>Why Water is Important in Our Body </h1>
 		
+		<img src="../IMAGES/2.jpg" width="550" height="350" class="center"></img>
+
 			<p>You know you need water to live, and drinking it on a daily basis makes you feel better. So what happens in the body when you drink water?<br><br>
 			Water is used by the body to help control temperature and sustain other bodily functions in all of its cells, muscles, and tissues. Since 
 			the body loses water by breathing, sweating, and digestion, it's important to rehydrate through consuming water and consuming water-rich foods.
-		
-			<ol>
+			<hr>
+			<br>
+			<ol id="ol">
 				<b><li>Water Protects Your Tissues, Spinal Cord, and Joints</li></b><br>
 					<ul type="square">
 						<li>Keeping your body hydrated helps it retain optimum levels of moisture in these sensitive areas, as well as in the blood, bones, and brain. In addition, water helps protect the spinal cord, and it acts as a lubricant and cushion for your joints.</li>
@@ -359,7 +158,7 @@ ul.a {
 					<ul type="square">
 						<li>Adequate water intake enables your body to excrete waste through perspiration, urination, and defecation. Water helps your kidneys remove waste from your blood and keep the blood vessels that run to your kidneys open and filter them out.</li>
 					<br>
-					<b>RELATED: <a href="enough_water.html">Are You Drinking Enough Water? These Are the Health Risks of Dehydration</a></b>
+					<b style="font-size:15px">RELATED: <a href="Page7.html">Are You Drinking Enough Water? These Are the Health Risks of Dehydration</a></b>
 					</ul>
 				<br>	
 				<b><li>Water Aids in Digestion</li></b><br>
@@ -374,7 +173,7 @@ ul.a {
 						<li>Your body loses fluids when you engage in vigorous exercise, sweat in high heat, or come down with a fever or contract an illness that causes vomiting or diarrhea. If you're losing fluids for any of these reasons, it's important 
 						to increase your fluid intake so that you can restore your body's natural hydration level. Your doctor may also recommend that you drink more fluids to help treat other health conditions, like bladder infections and urinary tract stones</li>
 					<br>
-					<b>RELATED: <a href="fasting101.html">Water Fasting 101: What You Need to Know</a></b>
+					<b style="font-size:15px">RELATED: <a href="Page8.html">Water Fasting 101: What You Need to Know</a></b>
 					</ul>
 				<br>	
 				<b><li>Water Helps Your Brain Function Optimally</li></b><br>
@@ -388,7 +187,7 @@ ul.a {
 					<ul type="square">
 						<li>Water is a huge part of your blood. If you become dehydrated, your blood becomes more concentrated, which can lead to an imbalance of the electrolyte minerals it contains sodium and potassium, for example. These electrolytes are necessary for proper muscle and heart function.</li>
 					<br>
-					<b>RELATED: <a href="symptomSign.html">Is Your Symptom a Sign of Dehydration or Something Else?</a></b>
+					<b style="font-size:15px">RELATED: <a href="Page9.html">Is Your Symptom a Sign of Dehydration or Something Else?</a></b>
 					</ul>
 				<br>	
 				<b><li>Water Can Help You Eat Healthier</li></b><br>
@@ -399,12 +198,12 @@ ul.a {
 			</ol>
 			</div>
 			</p>
-
 </div>
-<br><br><br>
-<br><br><br>
-<br><br><br>
-<br><br><br>
+			<br>
+			<button class="button  button1" style="vertical-align:right-side"><a href="../PAGES/Page7.html"><span>Next</span></a></button>
+			<button class="button  button2" style="vertical-align:right-side"><a href="../PAGES/Page5.html"><span>Previous</span></a></button>
+			<br><br><br><br><br>
+
 	<div class="footer">
 		<br>
 		<h6>Healthy Alley &#169; 2021</h6>
