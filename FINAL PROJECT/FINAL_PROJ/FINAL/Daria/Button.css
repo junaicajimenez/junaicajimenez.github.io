@@ -41,7 +41,7 @@
   color: black;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: 'Raleway', sans-serif;
+  font-family: inherit;
   margin: 0;
 }
 
@@ -70,7 +70,7 @@
 .dropdown-content a:hover {
   background-color: #57cc99;
   color: white;
-  height: 60px ;
+  height: 90px ;
 }
 
 .dropdown:hover .dropdown-content {
