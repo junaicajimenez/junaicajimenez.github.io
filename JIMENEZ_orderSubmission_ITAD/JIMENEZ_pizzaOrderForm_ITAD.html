@@ -6,20 +6,27 @@
 	<link href="https://fonts.googleapis.com/css2?family=Gorditas&display=swap" rel="stylesheet">
     <title>Pizza Order Form</title>
     <style type="text/css">
-		.content {
+
+	
+	body{
+		font-family: tahoma;
+		color: navy;
+		font-size: 1.125em;
+	}
+	
+	.content {
 		color: #002129;
 		height:auto; 
 		margin: 3% 30%;
-		
-
 
 	}
+	
 	input{
 		text-align: justify;
 	}
-	fieldset{
 	
-	border: 5px solid #000000;
+	fieldset{
+		border: 5px solid #000000;
 	
 	}
 	
@@ -41,12 +48,6 @@
 		border-bottom: 1px solid #ffc600;
 		border-collapse: collapse;
 		padding: 20px; 
-	}
-	
-	body{
-		font-family: tahoma;
-		color: navy;
-		font-size: 1.125em;
 	}
 	
 	thead tr{
@@ -169,7 +170,7 @@
 			</tr>
 			
 			<tr>
-				<td><label for="area">Details  :</label></td>
+				<td><label for="area">Details how to get there:</label></td>
 				<td>
 					<textarea id="txtAnswer" rows="10" cols="40" required></textarea>
 				</td>
@@ -205,7 +206,7 @@
 			</tr>
 			
 			<tr>
-				<td><label for="option">Patty of the Burger:</label></td>
+				<td><label for="option">Type of Patty:</label></td>
 				<td>
 					<input type="radio" id="single" name="patty" value="single">
 					<label for="single">Single Patty</label><br>
@@ -379,35 +380,31 @@
 			</tr>
 			
 			<tr>
-				<td><label for="option">Preferred drinks:</label></td>
+				<td><label for="checkAll">Type of drinks:</label></td>
 				<td>
-					<input type="radio" id="NA" name="drinks" value="NA">
+					<input type="checkbox" id="NA" name="drinks" value="NA">
 					<label for="NA"> None</label><br>
-					<input type="radio" id="water" name="drinks" value="water">
+					<input type="checkbox" id="water" name="drinks" value="water">
 					<label for="water">Bottled Water</label><br>
-					<input type="radio" id="coke" name="drinks" value="coke">
+					<input type="checkbox" id="coke" name="drinks" value="coke">
 					<label for="coke">Coke</label><br>
-					<input type="radio" id="sprite" name="drinks" value="sprite">
+					<input type="checkbox" id="sprite" name="drinks" value="sprite">
 					<label for="sprite">Sprite</label><br>
-					<input type="radio" id="royal" name="drinks" value="royal">
+					<input type="checkbox" id="royal" name="drinks" value="royal">
 					<label for="royal">Royal</label><br>
-					<input type="radio" id="pepsi" name="drinks" value="pepsi">
+					<input type="checkbox" id="pepsi" name="drinks" value="pepsi">
 					<label for="pepsi">Pepsi</label><br>
-					<input type="radio" id="fanta" name="drinks" value="fanta">
+					<input type="checkbox" id="fanta" name="drinks" value="fanta">
 					<label for="fanta">Fanta</label><br>
-					<input type="radio" id="dew" name="drinks" value="dew">
+					<input type="checkbox" id="dew" name="drinks" value="dew">
 					<label for="dew">Mountain Dew</label><br>
-					<input type="radio" id="hotcoffee" name="drinks" value="hotcoffee">
-					<label for="hotcoffee">Hot Coffee</label><br>
-					<input type="radio" id="icedcoffee" name="drinks" value="icedcoffee">
-					<label for="icedcoffee">Iced Coffee</label><br>
 					
-
 				</td>
 			</tr>
 			
+			
 			<tr>
-				<td><label for="option">Size of your beverage:</label></td>
+				<td><label for="option">Drinks Size:</label></td>
 				<td>
 					<input type="radio" id="small" name="beverage" value="small">
 					<label for="small">Small</label><br>
@@ -470,7 +467,7 @@
 		<tfoot>
 			<tr>
 				<th><input type="submit" id="btn1" value="Submit"></th>
-				<th><input type="reset" id="btn2" value="Clear"></th>
+				<th><input type="reset" id="btn2" value="Cancel"></th>
 			</tr>
 		</tfoot>
 	</table>
