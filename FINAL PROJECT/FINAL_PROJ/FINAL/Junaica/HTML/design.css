@@ -48,8 +48,9 @@
   font-family: 'Raleway', sans-serif;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+.dropdown:hover .dropbtn {
   background-color: #57cc99;
+  color: white;
 }
 
 .dropdown-content {
