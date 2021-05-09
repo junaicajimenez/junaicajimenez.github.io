@@ -31,7 +31,8 @@ div.footer2{
 			
 		}
 		.content{ 
-border: 8px solid #25A18E;	
+   border: 2px solid #25A18E;	
+  box-shadow: 0px 0px 21px -9px rgba(0,0,0,1);
   float:center;
   background-image: linear-gradient(to bottom right, #fbfdfd, #f9ffed);
   color: #002129;
@@ -51,13 +52,14 @@ border: 8px solid #25A18E;
 .column {
   flex: 25%;
   max-width: 25%;
-  padding: 0 4px;
+ 
 }
 
-.column img {
-  margin-top: 8px;
+.gallery img {
   vertical-align: middle;
   width: 100%;
+   filter: grayscale(100%);
+   transition:0.5s;
 }
 
 
@@ -83,9 +85,12 @@ h1{
 	 word-spacing: 5px;
 	 letter-spacing:5px;
 }
-div.gallery:hover {
-  opacity: 0.6; ; 
+div.gallery:hover img{
+ filter: grayscale(0);
+  
 }
+
+
 </style>
 </head>
 <body>
@@ -117,7 +122,7 @@ div.gallery:hover {
     <div class="column">
 	  <div class="gallery">
       <a target="_blank" href="Images/3.jpg">
-      <img src="Images/3.jpg" alt="Food">
+      <img src="Images/3.jpg" alt="Food" class ="img1">
 	  </a>
 	     </div>
 	  <div class="gallery">
@@ -157,16 +162,17 @@ div.gallery:hover {
       <img src="Images/1.jfif" alt = "Food" >
 	  </a>
 	  </div>
+	   <div class="gallery">
+      <a target="_blank" href="Images/6.jpg">
+   <img src="Images/6.jpg" alt = "Food" class="img2">
+	  </a>
+	  </div>
 	  <div class="gallery">
       <a target="_blank" href="Images/12.jpg">
        <img src="Images/12.jpg" alt = "Mental Health Photography" >
 	  </a>
 	  </div>
-	  <div class="gallery">
-      <a target="_blank" href="Images/6.jpg">
-   <img src="Images/6.jpg" alt = "Food" class="img2">
-	  </a>
-	  </div>
+	 
 	  <div class="gallery">
       <a target="_blank" href="Images/14.jpg">
        <img src="Images/14.jpg" alt = "Mental Health Photography" >
