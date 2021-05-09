@@ -308,7 +308,11 @@
 		}
 		
 		div.footer2{
+			left: 0;
+			bottom: 0;
+			width: 100%;
 			font-family: 'Raleway', sans-serif;
+			position: fixed;
 			color: #f9ffed;
 			text-align: center;
 			font-weight: lighter;
@@ -316,7 +320,7 @@
 			background-color: black;
 			
 		}
-		.topnav {
+.topnav {
 	overflow: hidden;
 	background-color: #9fffcb;
 	height: 60px;
@@ -330,6 +334,7 @@
 	text-decoration: none;
 	float:left;
 	font-size: 22px;
+	font-family: 'Raleway', sans-serif;
 }
 .topnav a:hover {
 	background-color: #57cc99;
@@ -337,18 +342,23 @@
 	height: 60px;
 }
 .topnav a.active {
-			background-color: #9fffcb;
-			color: black;
-			float: left;
-			margin-right: 40%;
-			text-decoration:none;
-			padding-right: 30px;
-		}
+	background-color: #9fffcb;
+	color: black;
+	float: left;
+	margin-right: 40%;
+	text-decoration:none;
+	text-transform: uppercase;
+	font-weight: 1000;
+	pointer-events: none;
+   cursor: default;
+	
+}
 
 
 .dropdown {
   float: left;
   overflow: hidden;
+  font-family: 'Raleway', sans-serif;
 
 }
 
@@ -361,10 +371,12 @@
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+  font-family: 'Raleway', sans-serif;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+ .dropdown:hover .dropbtn {
   background-color: #57cc99;
+  color: white;
 }
 
 .dropdown-content {
@@ -467,9 +479,9 @@
 
 	
 	<div class="footer2">
-		<br>
+		<br><br>
 		<h6>Healthy Alley &#169; 2021</h6>
-		<br>
+		<br><br>
 	</div>
 </body>
 </html>
