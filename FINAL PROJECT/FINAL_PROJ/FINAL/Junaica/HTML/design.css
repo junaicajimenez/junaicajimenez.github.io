@@ -253,3 +253,8 @@ h3{
   width: 80%;
 
 }
+@media screen and (max-width:600px) {
+		  body {
+			width: 100%;
+	}
+}
