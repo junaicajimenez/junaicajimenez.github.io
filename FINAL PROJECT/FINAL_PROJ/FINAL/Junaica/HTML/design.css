@@ -247,6 +247,7 @@ h3{
 }
 .content {
   background-image: linear-gradient(to bottom right, #fbfdfd, #f9ffed);
+  border: 8px solid #25A18E;
   color: #002129;
   margin: 3% 10%;
   padding: 0% 3%;
