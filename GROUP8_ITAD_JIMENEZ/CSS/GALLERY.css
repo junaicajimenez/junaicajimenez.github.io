@@ -1,3 +1,86 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Tahoma, Helvetica, sans-serif;
+ 
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+
+
+div.footer2{
+			font-family: 'Raleway', sans-serif;
+			color: #f9ffed;
+			text-align: center;
+			font-weight: lighter;
+			font-size: 20px;
+			background-color: black;
+			padding: 0% 4%;
+		}
+.content{ 
+   border: 2px solid #25A18E;	
+  box-shadow: 0px 0px 21px -9px rgba(0,0,0,1);
+  float:center;
+  background-image: linear-gradient(to bottom right, #fbfdfd, #f9ffed);
+  color: #002129;
+  height:auto; 
+  margin: 2% 0% 0% 10%;
+  padding: 15px 40px;
+  width: 80%
+
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+ 
+}
+
+.gallery img {
+  vertical-align: middle;
+  width: 100%;
+   filter: grayscale(100%);
+   transition:0.5s;
+}
+
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+h1{
+    text-align:center;
+     text-transform: uppercase;
+	 font-family: "FuturaBT-MediumCondensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	  font-size: 40px;
+	 word-spacing: 5px;
+	 letter-spacing:5px;
+}
+div.gallery:hover img{
+ filter: grayscale(0);
+  
+}
+
 .topnav {
 	overflow: hidden;
 	background-color: #9fffcb;
