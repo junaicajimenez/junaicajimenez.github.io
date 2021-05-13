@@ -223,8 +223,6 @@
   background-color: #b4dbbb;
   color: white;
 }
-
-
 .button2 span {
   cursor: pointer;
   display: inline-block;
@@ -252,4 +250,18 @@
 }
 a{
 	color: black;
+}
+@media screen and (max-width:600px) {
+		  body {
+			width: 100%;
+	}
+}
+div.footer2{
+	font-family: 'Raleway', sans-serif;
+	color: #f9ffed;
+	text-align: center;
+	font-weight: lighter;
+	font-size: 20px;
+	background-color: black;
+			
 }
