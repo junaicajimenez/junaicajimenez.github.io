@@ -8547,11 +8547,11 @@ div.cs-select span {
   color: rgba(255, 255, 255, 0.5);
 }
 #fh5co-hotel-section .hotel-content .hotel-grid > div {
-  width: 110px;
+  width: 115px;
   position: absolute;
   top: 0;
   left: -110px;
-  padding: 10px;
+  padding: 7px;
   background: #ff5722;
   color: #fff;
   -webkit-transition: 0.1s;
@@ -8565,7 +8565,7 @@ div.cs-select span {
 }
 #fh5co-hotel-section .hotel-content .hotel-grid > div span {
   display: block;
-  font-size: 18px;
+  font-size: 16px;
 }
 #fh5co-hotel-section .hotel-content .hotel-grid .book-now {
   position: absolute;
@@ -8583,11 +8583,11 @@ div.cs-select span {
   color: #fff !important;
 }
 #fh5co-hotel-section .hotel-content .desc {
-  border: 1px solid #e6e6e6;
-  border-top: 0;
+  border: 2px solid #ff5722;
+  border-top: 10;
   padding: 20px;
   margin-bottom: 40px;
-  -webkit-transition: 0.1s;
+  -webkit-transition: 1.1s;
   -o-transition: 0.1s;
   transition: 0.1s;
 }
@@ -8616,6 +8616,8 @@ div.cs-select span {
   -o-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.06);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.06);
 }
+
+ul {text-align: left;}
 
 #testimonial {
   background: #FF5722;
