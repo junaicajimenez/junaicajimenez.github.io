@@ -8039,7 +8039,7 @@ div.cs-select span {
   background: #FF5722;
   width: 100%;
   top: 1em;
-  z-index: 99;
+  z-index: 50;
   position: relative;
   display: inline-block;
   margin-top: 0;
