@@ -22,7 +22,7 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-	
+	<link rel="shortcut icon" type="image/png" href="images/morning7-logo.png" />
 	<!-- Stylesheets -->
 	<!-- Dropdown Menu -->
 	<link rel="stylesheet" href="css/superfish.css">
@@ -85,7 +85,7 @@ body {
   display: flex;
   width: 100%;
   margin: 0 auto;
-  height: 1200px;
+  height: 680px;
 }
 .HolyGrail-body .HolyGrail-content {
   background: white;
@@ -106,7 +106,7 @@ width: 90%;
 }
 
 .HolyGrail-nav {
-padding-top: 10%;
+padding-top: 3%;
 padding-left: 6%;
 padding-right: 4%;
 }
@@ -166,6 +166,58 @@ padding-right: 4%;
   margin-left: 5px;
 
 }
+.modal__btn a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #fff#fff;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.modal__box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, .5);
+  transition: all 0.3s ease-in-out;
+}
+
+.modal__box:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__content {
+  position: relative;
+  max-width: 500px;
+  background-color: #fff;
+  padding: 20px 30px;
+}
+
+.modal__footer {
+  text-align: right;
+
+}
+.modal__close {
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: red;
+  text-decoration: none;
+}
  </style>
  <body>
  <div id="fh5co-wrapper">
@@ -224,15 +276,30 @@ padding-right: 4%;
 	  
     </div><br>
 	<div>
-	<p style="color:black">Morning Seven Policies:</p>
-	<p style="text-align: justify; color:black">The Resort has a zero tolerance policy, which means that it will refuse to admit or refuse service or accommodation to anyone who: acts in an obviously intoxicated or disorderly manner while on the Resort's premises, destroys or threatens to destroy Resort property, causes or threatens to cause a public disturbance; or refuses or is unable to pay for the accommodations or services.
+	
+	
+	</div><br><br>
+    
+	
+	<br><br><br>
+	<div class="modal__btn">
+   <!-- <a href="#modal__click">Open Modal Content</a> -->
+   <a href="perInfo.html" class="btn btn-primary" style="padding: 1% 5%; margin-left: 60%; margin-right: 2%;" >Back</a>
+	<a href="#modal__click" class="btn btn-primary" style="padding: 1% 5%; " >Next</a> 
+	
+</div>
+
+<div id="modal__click" class="modal__box">
+    <div class="modal__content">
+        <p style="color:black">Morning Seven Policies:</p>
+        <p style="text-align: justify; color:black">The Resort has a zero tolerance policy, which means that it will refuse to admit or refuse service or accommodation to anyone who acts in an obviously intoxicated or disorderly manner while on the Resort's premises, destroys or threatens to destroy Resort property, causes or threatens to cause a public disturbance; or refuses or is unable to pay for the accommodations or services.
 <br><br>
 Morning Seven Hotel Resort has the right to limit the number of people who can stay in a given guest unit and will only allow registered guests to utilize its services.
 
 A person who causes damage to the Resort or any furniture or furnishings within the Resort, whether negligently or intentionally, shall be liable for damages sustained by the Resort staff, comprising the Resort's income loss as a result of the inability to rent or lease units until the damage is repaired.
 <br> <br>
 THE RESORT'S MANAGEMENT RESERVES THE RIGHT TO ADD TO, ALTER, OR AMEND ANY OF THE ABOVE TERMS, CONDITIONS, AND RULES, ALL OF WHICH ARE PART AND ABSTRACT OF THE LODGING ACT.</p>
-	</div><br>
+<br>
 	<div class="form-check" style="color:black">
       <label class="form-check-label" for="check2">
         <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I AGREE.
@@ -243,10 +310,14 @@ THE RESORT'S MANAGEMENT RESERVES THE RIGHT TO ADD TO, ALTER, OR AMEND ANY OF THE
       <label class="form-check-label">
         <input type="checkbox" class="form-check-input">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;I DO NOT AGREE.
       </label>
-    </div><br><br>
-    <a href="perInfo.html" class="btn btn-primary" style="padding: 1% 5%; margin-left: 60%" >Back</a>
-	<a href="confirmation.html" class="btn btn-primary" style="padding: 1% 5%; margin-left: 2%" >Next</a>
-	
+    </div>
+        <div class="modal__footer">
+            <a href="confirmation.html" class="btn btn-primary" style="padding: 1% 5%; margin-left: 60%" >Ok</a> 
+        </div>
+        <a href="#" class="modal__close">&times;</a>
+		
+    </div>
+</div>
   </form>
  
 	
@@ -271,7 +342,7 @@ THE RESORT'S MANAGEMENT RESERVES THE RIGHT TO ADD TO, ALTER, OR AMEND ANY OF THE
 
 
 <div id="box1" style="width: 70%; height: auto; padding: 5px 8px; font-weight:normal; font-size:15px;">Booked Rooms <br> <button type="submit" class="btn btn-primary" style="padding: 1% 8%; margin-left: 55%; "> <i class="fa fa-refresh">&nbsp;&nbsp;&nbsp Reset</i></button><br><br>
-<button type="submit" class="btn btn-primary" style="padding: 1% 5%; margin-left: 15% "> <i class="fa fa-plus">&nbsp;&nbsp;&nbsp Add More Rooms</i></button></div><br>
+<button type="submit" class="btn btn-primary" style="padding: 1% 5%; margin-left: 17% "> <i class="fa fa-plus">&nbsp;&nbsp;&nbsp Add More Rooms</i></button></div><br>
 <div id="box1" style="width: 70%;  height: 30%; padding: 5px 8px; border: 2px solid black;"> </div>
 
 
