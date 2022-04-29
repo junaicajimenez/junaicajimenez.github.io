@@ -143,7 +143,46 @@ padding-right: 4%;
 border: 2px solid black;
 }
 
+.modal__box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, .5);
+  transition: all 0.3s ease-in-out;
+}
 
+.modal__box:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__content {
+  position: relative;
+  max-width: 500px;
+  background-color: #fff;
+  padding: 20px 30px;
+}
+
+.modal__footer {
+  text-align: right;
+
+}
+.modal__close {
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: red;
+  text-decoration: none;
+}
  </style>
  <body>
  <div id="fh5co-wrapper">
@@ -205,9 +244,27 @@ border: 2px solid black;
   Mrs. Armina T. Fuentesfina<br>
   Manager</p><br></i>
   
-  <a href="printreceipt.html" ><button type="submit" class="btn btn-primary" style="padding: 1% 5%" ><i class="fa fa-file-pdf-o">&nbsp;&nbsp;&nbsp; View Receipt</i></button></a>
-	<a href="payment.html" class="btn btn-primary" style="padding: 1% 5%; margin-left: 40%" >Back</a>
-	<a href="index.html" class="btn btn-primary" style="padding: 1% 5%; margin-left: 2%" >Done</a>
+  
+	
+  <div class="modal__btn">
+   <!-- <a href="#modal__click">Open Modal Content</a> -->
+   <a href="printreceipt.html" ><button type="submit" class="btn btn-primary" style="padding: 1% 5%" ><i class="fa fa-file-pdf-o">&nbsp;&nbsp;&nbsp; View Receipt</i></button></a>
+	<a href="payment.html" class="btn btn-primary" style="padding: 1% 5%; margin-left: 40%" >Back</a> 
+	<a href="#modal__click" class="btn btn-primary" style="padding: 1% 5%; margin-left: 2%">Done</a>
+</div>
+
+<div id="modal__click" class="modal__box">
+    <div class="modal__content">
+        
+        <p>Thank you for booking in our Resort. Please wait the confirmation message of the Morning Seven Resort Hotel.</p>
+        <div class="modal__footer">
+            <a href="index.html" class="btn btn-primary" style="padding: 1% 5%; margin-left: 60%" >Ok</a> 
+        </div>
+        <a href="#" class="modal__close">&times;</a>
+		
+    </div>
+</div>
+  
   </main>
   
   
