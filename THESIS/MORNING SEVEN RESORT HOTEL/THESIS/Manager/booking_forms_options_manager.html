@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Morning 7 Resort Hotel Dashboard Manager</title>
+	<link rel="shortcut icon" href="morning7-logo.png" type="image">
+    <!-- bootstrap 5 css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <!-- BOX ICONS CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- CUSTOMIZED CSS -->
+    <link rel="stylesheet" href="css/dashEmp.css" />
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+	<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Side-Nav -->
+    <div
+      class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column"
+      id="sidebar"
+    >
+      <ul class="nav flex-column text-white w-100">
+        <img src="morning7-logo.png" height="90px" width="160px" style="padding-left:10px;">
+        <li href="#" class="nav-link">
+          <i class="bx bxs-dashboard"></i>
+          <a href="dashboard_manager.html"><span class="mx-2" style="font-size:23px;">Dashboard</span></a>
+        </li>
+        <li href="#" class="nav-link">
+          <i class="bx bx-calendar"></i>
+          <a href="calendar_manager.html"><span class="mx-2" style="font-size:23px;">Calendar</span></a>
+        </li>
+        <li href="#" class="nav-link">
+          <span class="iconify" data-icon="bxs:book-bookmark"></span>
+          <a href="bookings_manager.html"><span class="mx-2" style="font-size:23px;">Bookings</span></a>
+        </li>
+		<li href="#" class="nav-link">
+          <span class="iconify" data-icon="fa6-solid:people-group"></span>
+          <a href="customer_manager.html"><span class="mx-2" style="font-size:23px;">Customer</span></a>
+        </li>
+		<li href="#" class="nav-link">
+          <i class="bx bxs-bed"></i>
+          <a href="room_manager.html"><span class="mx-2" style="font-size:23px;">Rooms</span></a>
+        </li>
+		<li href="#" class="nav-link">
+          <i class="bx bxs-discount"></i>
+          <a href="discount_manager.html"><span class="mx-2" style="font-size:23px;">Discounts</span></a>
+        </li>
+		<li href="#" class="nav-link">
+          <i class="bx bx-star"></i>
+          <a href="extras_manager.html"><span class="mx-2" style="font-size:23px;">Extras</span></a>
+        </li>
+		<li href="#" class="nav-link">
+          <i class="bx bx-customize"></i>
+          <a href="options_manager.html"><span class="mx-2" style="font-size:23px;">Options</span></a>
+        </li>
+		<li href="#" class="nav-link">
+          <i class="bx bxs-file"></i>
+          <a href="reports_manager.html"><span class="mx-2" style="font-size:23px;">Reports</span></a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Main Wrapper -->
+    <div class="p-1 my-container active-cont">
+      <!-- Top Nav -->
+      <nav class="navbar top-navbar navbar-light bg-transparent px-5 pt-1">
+        <a class="btn border-0 bg-warning" id="menu-btn"><i class="bx bx-menu"></i></a>
+		<div align="right" style="padding-left:20px; font-size:30px;">
+			<i class="bi bi-person" style="font-size:50px;"></i><span>	Hello Manager #XXX!</span><i class="bi bi-box-arrow-right" style="font-size:50px; padding-left: 50px;"></i>
+		</div>
+      </nav>
+	  
+	  <hr>
+		  <!--End Top Nav -->
+		  <br>
+		  <div style="background-color:orange;">
+			<h1 style="margin-left: 10px">Booking Forms</h1>
+			<br>
+			<div class="input-group" style="padding-right: 5%;padding-left: 10%;">
+			  <label style="margin-left: 4%;">First Name</label>
+				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="margin-left: 10%; float: right;">
+					Required
+				</button>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+					<li><a class="dropdown-item" href="#">Required</a></li>
+					<li><a class="dropdown-item" href="#">Optional</a></li>
+				</ul>
+				<label style="margin-left: 40%;">Last Name</label>
+				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="margin-left: 10%; float: right;">
+					Required
+				</button>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+					<li><a class="dropdown-item" href="#">Required</a></li>
+					<li><a class="dropdown-item" href="#">Optional</a></li>
+				</ul>
+				<label style="margin-left: 3%;">Contact Number</label>
+				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="margin-left: 10%; float: right;">
+					Required
+				</button>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+					<li><a class="dropdown-item" href="#">Required</a></li>
+					<li><a class="dropdown-item" href="#">Optional</a></li>
+				</ul>
+				<label style="margin-left: 37%;">Mobile Number</label>
+				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="margin-left: 10%; float: right;">
+					Required
+				</button>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+					<li><a class="dropdown-item" href="#">Required</a></li>
+					<li><a class="dropdown-item" href="#">Optional</a></li>
+				</ul>
+				<br>
+				<label style="margin-left: 3%;">Email Address</label>
+				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="margin-left: 10%; float: right;">
+					Required
+				</button>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+					<li><a class="dropdown-item" href="#">Required</a></li>
+					<li><a class="dropdown-item" href="#">Optional</a></li>
+				</ul>
+				<label style="margin-left: 40%;">Location</label>
+				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="margin-left: 10%; float: right;">
+					Required
+				</button>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+					<li><a class="dropdown-item" href="#">Required</a></li>
+					<li><a class="dropdown-item" href="#">Optional</a></li>
+				</ul>
+				<br>
+			</div>
+			<br><br><br>
+			<a class="btn btn-success" style="height: 50px; width: 100px; margin-left: 80%;">Save</a>
+			<a class="btn btn-success" style="height: 50px; width: 100px;">Cancel</a>
+			<br><br>
+		</div>
+		<br><br>
+		<a class="btn btn-success" style="height: 50px; width: 100px; margin-left: 80%;" href="options_manager.html">Back</a>
+		<a class="btn btn-success" style="height: 50px; width: 100px;" href="dashboard_manager.html">Home</a>
+	</div>
+
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom js -->
+    <script>
+      var menu_btn = document.querySelector("#menu-btn");
+      var sidebar = document.querySelector("#sidebar");
+      var container = document.querySelector(".my-container");
+      menu_btn.addEventListener("click", () => {
+        sidebar.classList.toggle("active-nav");
+        container.classList.toggle("active-cont");
+      });
+    </script>
+  </body>
+</html>

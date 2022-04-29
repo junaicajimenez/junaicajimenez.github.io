@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Morning 7 Resort Hotel Dashboard Employee</title>
+	<link rel="shortcut icon" href="morning7-logo.png" type="image">
+    <!-- bootstrap 5 css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <!-- BOX ICONS CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/bookEmp.css" />
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  </head>
+
+  <body>
+  <div style="margin-left: 2%;">
+		  <br>
+		  <h1>RECEIPT</h1>
+		  <br><br>
+		  <h3>Bill to</h3><br>
+		  <span style="font-weight: bold;font-size: 30px;">Name</span>
+		  <span style="font-weight: bold;font-size: 30px; margin-left: 20%;">Arrival Date</span>
+		  <span style="font-weight: bold;font-size: 30px; margin-left: 20%;">No. of Guests</span>
+		  <br>
+		  <span style="font-weight: normal;font-size: 30px;">Kylie Padilla</span>
+		  <span style="font-weight: normal;font-size: 30px; margin-left: 15%;">January 26, 2022</span>
+		  <span style="font-weight: normal;font-size: 30px; margin-left: 22%;">5</span>
+		  <br>
+		  <span style="font-weight: bold;font-size: 30px;">Confirmation Number</span>
+		  <span style="font-weight: bold;font-size: 30px; margin-left: 6%;">Departure Date</span>
+		  <span style="font-weight: bold;font-size: 30px; margin-left: 17%;">Receipt Number</span>
+		  <br>
+		  <span style="font-weight: normal;font-size: 30px;">2022-1978</span>
+		  <span style="font-weight: normal;font-size: 30px; margin-left: 16%;">January 28, 2022</span>
+		  <span style="font-weight: normal;font-size: 30px; margin-left: 22%;">#1</span>
+		  <br>
+		  <span style="font-weight: bold;font-size: 30px;">Room Type</span>
+		  <span style="font-weight: bold;font-size: 30px; margin-left: 14%;">Nightly Room Rate</span>
+		  <span style="font-weight: bold;font-size: 30px; margin-left: 16%;">Receipt Date</span>
+		  <br>
+		  <span style="font-weight: normal;font-size: 30px;">Deluxe Room</span>
+		  <span style="font-weight: normal;font-size: 30px; margin-left: 15%;">Php 14,400</span>
+		  <span style="font-weight: normal;font-size: 30px; margin-left: 20%;">January 26, 2022</span>
+		  <br><br><br>
+		  <a class="btn btn-success" style="margin-left: 0%;height:40px;width:100px;" href="dashboard_employee.html">Done</a>
+		  <br><br><br>
+
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom js -->
+    <script>
+      var menu_btn = document.querySelector("#menu-btn");
+      var sidebar = document.querySelector("#sidebar");
+      var container = document.querySelector(".my-container");
+      menu_btn.addEventListener("click", () => {
+        sidebar.classList.toggle("active-nav");
+        container.classList.toggle("active-cont");
+      });
+    </script>
+  </body>
+</html>
