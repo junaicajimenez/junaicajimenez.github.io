@@ -71,6 +71,62 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+<style>
+
+.modal__btn a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #fff#fff;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.modal__box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, .5);
+  transition: all 0.3s ease-in-out;
+}
+
+.modal__box:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__content {
+  position: relative;
+  max-width: 500px;
+  background-color: #fff;
+  padding: 20px 30px;
+}
+
+.modal__footer {
+  text-align: right;
+
+}
+.modal__close {
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: red;
+  text-decoration: none;
+}
+</style>
+
 
 </head>
 <body>
@@ -162,6 +218,9 @@
 							<div class="form-group">
 								<input type="submit" value="Find Reservation" class="btn btn-primary">
 							</div>
+							
+							
+							
 						</div>
 						<div class="col-md-12">
 							<div class="form-group">
@@ -169,18 +228,35 @@
 								<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
 							</div>
 						</div>
-						<div class="col-md-12">
-							<div class="form-group">
-								<input type="submit" value="Cancel" class="btn btn-primary">
-								<input type="submit" value="Send Message" class="btn btn-primary">
-							</div>
+						
+							
+							
+							
+							
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	
+						<div class="modal__btn">
+						   <!-- <a href="#modal__click">Open Modal Content</a> -->
+							
+							<a href="#modal__click" class="btn btn-primary" style="padding: 0.5% 2%; margin-left: 90%; height: 50px;">Send </a>
+							
+						</div>
+
+						<div id="modal__click" class="modal__box">
+							<div class="modal__content">
+								<h1></h1>
+								<p>Your message has been sent, please wait our response.</p>
+								<div class="modal__footer">
+									<a href="find.html" class="btn btn-primary" style="padding: 1% 5%; margin-left: 60%" >Ok</a> 
+								</div>
+								<a href="#" class="modal__close">&times;</a>
+								
+							</div>
+						</div>
 
 	<footer id="footer" class="fh5co-bg-color">
 		<div class="container">
