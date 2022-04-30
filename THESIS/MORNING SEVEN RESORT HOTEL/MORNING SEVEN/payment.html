@@ -53,7 +53,12 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+	<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
  <style>
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700);
 /* Mixins */
@@ -85,7 +90,7 @@ body {
   display: flex;
   width: 100%;
   margin: 0 auto;
-  height: 680px;
+  height: 920px;
 }
 .HolyGrail-body .HolyGrail-content {
   background: white;
@@ -219,6 +224,16 @@ padding-right: 4%;
   color: red;
   text-decoration: none;
 }
+.payment {
+  columns: 21px 3;
+  border-radius: 10px; 
+  border: 2px solid black;
+  padding-left: 10px;
+   padding-right: 10px;
+  margin-right: 10%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
  </style>
  <body>
  <div id="fh5co-wrapper">
@@ -345,6 +360,28 @@ THE RESORT'S MANAGEMENT RESERVES THE RIGHT TO ADD TO, ALTER, OR AMEND ANY OF THE
 
 <div id="box1" style="width: 70%; height: auto; padding: 5px 8px; border: 2px solid black; font-weight:normal">Total: </div><br><br>
 
+<p style="font-size:18px; color:black; ">Payment Methods</p>
+<div class="payment">
+				<i class="fa fa-cc-amex" style="font-size: 50px;"></i>
+				
+				<br>
+				<i class="fa fa-cc-mastercard" style="font-size: 50px;"></i>
+				
+			
+				<i class="fa fa-cc-paypal" style="font-size: 50px;"></i>
+				
+				  
+				<br>
+				<i class="fa fa-cc-visa" style="font-size: 50px;"></i>
+				
+				<br>
+				<i class="fa fa-cc-diners-club" style="font-size: 50px;"></i>
+				
+				<br>
+				<i class="fa fa-cc-jcb" style="font-size: 50px;"></i>
+				
+</div>
+	<div>
   </aside>
 
 </div>
